@@ -1,0 +1,14 @@
+numpy
+scipy
+scikit-learn
+pandas
+soundfile
+librosa
+torch
+torchaudio
+transformers
+accelerate
+lightgbm
+xgboost
+tqdm
+pyarrow

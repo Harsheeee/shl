@@ -1,0 +1,33 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Audio Data & Large Files (GitHub 100MB limit)
+dataset/train/*.wav
+dataset/test/*.wav
+*.wav
+*.mp3
+*.flac
+
+# Model binaries & large weights
+*.pkl
+*.safetensors
+*.bin
+*.onnx
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

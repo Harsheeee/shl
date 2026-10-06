@@ -1,0 +1,44 @@
+The objective of this competition is to develop a Grammar Scoring Engine for spoken data samples. You are provided with an audio dataset where each file is between 45 to 60 seconds long. The ground truth labels are MOS Likert Grammar Scores for each audio instance (see rubric below). Your task is to build a model that takes an audio file as input and outputs a continuous score ranging from 0 to 5.
+
+Your submission will be assessed based on your ability to preprocess the audio data, select an appropriate methodology to solve the problem, and evaluate its performance using relevant metrics.
+
+Training: The training dataset consists of 769 samples.
+
+Testing (Evaluation): The testing dataset consists of 216 samples.
+Description
+Dataset Description
+
+Audio Files: The data contains audio files in (.wav) format.
+
+CSV Files:
+
+    train.csv - This file contains the list of audio file names and their respective labels for training (refer the rubric below for label definitions).
+    test.csv - This contains the names of the test audio files along with random labels.
+    sample_submission.csv - This contains the sample submission format for a valid submission.
+
+Grammar Score Rubric
+Grammar Score 	Description
+1 	The person's speech struggles with proper sentence structure and syntax, displaying limited control over simple grammatical structures and memorized sentence patterns.
+2 	The person has a limited understanding of sentence structure and syntax. Although they use simple structures, they consistently make basic sentence structure and grammatical mistakes. They might leave sentences incomplete.
+3 	The person demonstrates a decent grasp of sentence structure but makes errors in grammatical structure, or they show a decent grasp of grammatical structure but make errors in sentence syntax and structure.
+4 	The person displays a strong understanding of sentence structure and syntax. They consistently show good control of grammar. While occasional errors may occur, they are generally minor and do not lead to misunderstandings; the person can correct most of them.
+5 	Overall, the person showcases high grammatical accuracy and adept control of complex grammar. They use grammar accurately and effectively, seldom making noticeable mistakes. Additionally, they handle complex language structures well and correct themselves when necessary.
+
+Submission Requirements
+
+A Jupyter Notebook with well-documented and commented code. Please also include a brief report within the same notebook that explains the approach, preprocessing steps, pipeline architecture, and evaluation results.
+
+IT IS COMPULSORY TO ADD RMSE SCORE OF THE TRAINING DATA IN YOUR FINAL SUBMISSION NOTEBOOK.
+Evaluation Criteria
+
+    Correctness: Does the solution work as expected?
+    Code Quality: Is the code clean, well-structured, and documented?
+    Performance: How well does the model perform on the test dataset?
+    Interpretability: Are the results well-explained with relevant visualizations?
+
+Good luck!
+Evaluation
+
+Leaderboard will be evaluated using Pearson Correlation and RMSE.
+
+NOTE: You have to compute task relevant metrics in your notebook to benchmark model performance. You have to add visualizations wherever applicable.
